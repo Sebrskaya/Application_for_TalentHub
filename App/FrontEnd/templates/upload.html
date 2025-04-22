@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка видео</title>
+    <link rel="stylesheet" href="../static/style/upload.css">
+</head>
+<body>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="/pages/upload">Загрузить видео</a></li>
+                <li><a href="/pages/analytics">Аналитика</a></li>
+                <li id="admin-panel-item" style="display: block;"><a href="/pages/admin">Админ панель</a></li>
+                <li class="auth-link"><a href="/pages/login">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="upload-container">
+        <h2>Загрузка видео</h2>
+        <form id="upload-form">
+            <input type="file" id="video-file" accept="video/*" required>
+            <button type="submit">Загрузить</button>
+        </form>
+        <p id="upload-message" class="upload-message"></p>
+        <a href="dashboard.html" class="back-link">Вернуться в профиль</a>
+    </div>
+
+    <script src="../static/JS/upload.js"></script>
+</body>
+</html>

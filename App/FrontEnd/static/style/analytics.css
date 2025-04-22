@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 60px; /* Добавляем отступ для фиксированного меню */
+}
+
+/* Навигационное меню - теперь фиксированное */
+.menu {
+    width: 100%;
+    background: #007bff;
+    padding: 10px 20px;
+    position: fixed; /* Делаем меню фиксированным */
+    top: 0;         /* Прижимаем к верхнему краю */
+    left: 0;
+    z-index: 1000;  /* Убедимся, что меню поверх других элементов */
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu nav ul li {
+    margin-right: 20px;
+    padding: 5px 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu nav ul li:hover {
+    opacity: 0.7;
+}
+
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu nav ul .auth-link {
+    margin-left: auto;
+}
+
+/* Контейнер */
+.container {
+    margin-top: 20px; /* Уменьшаем отступ, так как меню теперь фиксированное */
+}
+
+/* Остальные стили остаются без изменений */
+.message {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#analytics-data {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.report-links {
+    margin-top: 20px;
+}
+
+.report-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Видео контейнер */
+.video-container {
+    max-height: 400px; /* Максимальная высота видео */
+    overflow: hidden; /* Обрезание содержимого */
+    margin: 10px 0;
+    display: inline-block;
+}
+
+video {
+    width: 100%; /* Полная ширина контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-height: 400px; /* Дублируем максимальную высоту */
+    object-fit: contain; /* Сохраняет пропорции, не обрезая видео */
+}

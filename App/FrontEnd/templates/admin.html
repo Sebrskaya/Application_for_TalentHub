@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Админ панель</title>
+    <link rel="stylesheet" href="../static/style/admin.css">
+</head>
+<body>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="/pages/upload">Загрузить видео</a></li>
+                <li><a href="/pages/analytics">Аналитика</a></li>
+                <li id="admin-panel-item" style="display: block;"><a href="/pages/admin">Админ панель</a></li>
+                <li class="auth-link"><a href="/pages/login">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Пользователи -->
+        <section>
+            <h2>Пользователи <button id="toggle-user-edit" class="toggle-btn">Редактировать ▼</button></h2>
+            
+            <div id="user-edit-panel" class="edit-panel">
+                <h3>Добавить пользователя</h3>
+                <form id="add-user-form">
+                    <input type="text" placeholder="Имя пользователя" id="new-username" required>
+                    <input type="password" placeholder="Пароль" id="new-password" required>
+                    <button type="submit">Добавить</button>
+                </form>
+                </form>
+                <h3>Обновить пользователя</h3>
+                <form id="user-form">
+                    <input type="number" placeholder="ID" id="user-id">
+                    <select id="user-role">
+                        <option value="">Выберите роль</option>
+                        <option value="user">user</option>
+                        <option value="admin">admin</option>
+                    </select>
+                    <!-- <input type="text" placeholder="Имя пользователя" id="user-name"> -->
+                    <input type="password" placeholder="Пароль" id="user-password">
+                    <button type="submit">Сохранить</button>
+                </form>
+                <h3>Удалить пользователя</h3>
+                <form id="user-delete-form">
+                    <input type="number" placeholder="ID" id="user-delete-id" >
+                    <button type="submit">Удалить</button>
+                </form>
+            </div>
+            
+            <h3>Данные о пользователях</h3>
+            <div class="report-links">
+                <a href="#" id="generate-user-pdf">Скачать отчет в PDF</a>
+                <a href="#" id="generate-user-xlsx">Скачать отчет в Excel</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Роль</th>
+                        <th>Имя пользователя</th>
+                        <th>Хэш-Пароля</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table"></tbody>
+            </table>
+            
+        </section>
+
+        <!-- Аналитика сайта -->
+        <section>
+            <h2>Аналитика сайта</h2>
+            <div class="report-links">
+                <a href="#" id="generate-analytics-pdf">Скачать отчет в PDF</a>
+                <a href="#" id="generate-analytics-xlsx">Скачать отчет в Excel</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Пользователей зашло</th>
+                        <th>Загружено видео</th>
+                        <th>Выгруженных отчётов</th>
+                    </tr>
+                </thead>
+                <tbody id="analytics-table"></tbody>
+            </table>
+        </section>
+
+        <!-- Логи -->
+        <section>
+            <h2>Логи действий</h2>
+            <div class="report-links" id="user-report-links" style="display: none;">
+                <span id="generate-log-user" class="username-report-link"></span>
+                <a href="#" id="generate-log-user-pdf">Скачать отчет по пользователю в PDF</a>
+                <a href="#" id="generate-log-user-xlsx">Скачать отчет по пользователю в Excel</a>
+            </div>
+            <div class="report-links">
+                <a href="#" id="generate-log-pdf">Скачать отчет по всем пользователям в PDF</a>
+                <a href="#" id="generate-log-xlsx">Скачать отчет по всем пользователям в Excel</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Выбрать</th>
+                        <th>Дата</th>
+                        <th>Время</th>
+                        <th>Пользователь</th>
+                        <th>Роль</th>
+                        <th>Тип действия</th>
+                    </tr>
+                </thead>
+                <tbody id="logs-table"></tbody>
+            </table>
+        </section>
+
+
+    </div>
+
+    <script src="../static/JS/admin.js"></script>
+</body>
+</html>

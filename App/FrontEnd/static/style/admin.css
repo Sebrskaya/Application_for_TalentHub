@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.menu {
+    width: 100%;
+    background: #007bff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* чтобы меню всегда было поверх */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu nav ul li {
+    margin-right: 40px;
+}
+
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu nav ul .auth-link {
+    margin-left: auto;
+}
+
+.container {
+    padding: 20px;
+    margin-top: 80px; /* отступ равен высоте меню */
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+}
+
+form input {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.report-links {
+    margin-top: 20px;
+}
+
+.report-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.toggle-btn {
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.toggle-btn:hover {
+    background: #0056b3;
+}
+
+.edit-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #f8f9fa;
+    padding: 0 15px 0px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.edit-panel.active {
+    max-height: 500px; /* Достаточно большое значение для всех форм */
+    padding: 15px;
+    border: 1px solid #ddd;
+    transition: max-height 0.3s ease-out;
+}
+
+select {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.selected-row {
+    background-color: #e6f7ff !important;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.log-checkbox {
+    cursor: pointer;
+}
+
+#user-report-links {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+#user-report-links span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.username-report-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.username-report-link:hover {
+    text-decoration: underline;
+}

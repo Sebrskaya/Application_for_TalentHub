@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.log
+.vscode/
+.env
+pgdata/
+**/static/videos/
+*.mp4
+*.avi
+*.mkv
+*.xlsx
+*.pdf
+*.db

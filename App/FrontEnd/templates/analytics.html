@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналитика видео</title>
+    <link rel="stylesheet" href="../static/style/analytics.css">
+</head>
+<body>
+
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="/pages/upload">Загрузить видео</a></li>
+                <li><a href="/pages/analytics">Аналитика</a></li>
+                <li id="admin-panel-item" style="display: block;"><a href="/pages/admin">Админ панель</a></li>
+                <li class="auth-link"><a href="/pages/login">Выйти</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Контент аналитики -->
+    <div class="container">
+        <!-- Блок, если видео нет -->
+        <div id="no-data" class="message">
+            <p>Вы ещё не загрузили видео, пожалуйста загрузите для просмотра информации.</p>
+        </div>
+
+        <!-- Блок с аналитикой (скрыт по умолчанию) -->
+        <div id="analytics-data" class="hidden">
+            <h2>Видео Аналитика</h2>
+            <div class="video-container">
+                <video id="video-player" controls>
+                    <source src="" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+
+            <!-- Таблица данных -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Общее кол-во аномалий</th>
+                        <th>Частота аномалий в секунду</th>
+                        <th>Средняя интенсивность аномалий</th>
+                    </tr>
+                </thead>
+                <tbody id="analytics-table">
+                    <!-- Данные заполняются через JS -->
+                </tbody>
+            </table>
+
+            <!-- Ссылки для генерации отчётов -->
+            <div class="report-links">
+                <a href="#" id="generate-pdf">Скачать отчет в PDF</a>
+                <a href="#" id="generate-excel">Скачать отчет в Excel</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/JS/analytics.js"></script>
+</body>
+</html>
