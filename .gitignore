@@ -11,3 +11,15 @@ pgdata/
 *.xlsx
 *.pdf
 *.db
+*.pth
+.ipynb_checkpoints/
+*.png
+
+App/BackEnd/analytics/datasets/weld/test/ground_truth/
+App/BackEnd/analytics/datasets/weld/test/sorted_images/
+App/BackEnd/analytics/datasets/weld/test/test/
+App/BackEnd/analytics/datasets/weld/test/test_images/
+App/BackEnd/analytics/datasets/weld/test/video_frames/
+App/BackEnd/analytics/datasets/weld/train/sorted_images/
+App/BackEnd/analytics/datasets/weld/val/
+App/BackEnd/analytics/weld_result/

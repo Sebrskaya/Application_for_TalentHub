@@ -14,3 +14,12 @@ fpdf
 openpyxl
 reportlab
 jinja2
+torch
+torchvision
+tqdm
+scikit-learn
+matplotlib
+numpy
+scipy
+scikit-image
+opencv-python
