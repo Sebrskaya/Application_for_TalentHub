@@ -15,4 +15,4 @@
 ![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/image.png)
 
 ## Пример обработанного кадра
-![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/example.jpg)
+![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/exemple.jpg)
