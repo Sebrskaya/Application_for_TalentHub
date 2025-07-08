@@ -1,1 +1,6 @@
 ![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/PADIM.png)
+![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/UseCase.png)
+![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/ROC-AUC.png)
+![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/diagram.png)
+![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/image.png)
+![Иллюстрация к проекту](https://github.com/Sebrskaya/Application_for_TalentHub/blob/main/assets/image_2025-07-08_16-25-48.png)
